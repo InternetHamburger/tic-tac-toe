@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "src/search.h"
 #include "src/board.h"
+#include "src/search.h"
 
 int main(void) {
     Board board = {
@@ -9,6 +9,6 @@ int main(void) {
         .x_to_move = 1
     };
 
-    printf("%d\n", perft(&board, 5));
+    printf("%d\n", negamax(&board));
     return 0;
 }

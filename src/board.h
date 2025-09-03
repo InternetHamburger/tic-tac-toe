@@ -8,8 +8,10 @@ typedef struct {
 } Board;
 
 
+void PrintBoard(Board *board);
 void MakeMove(Board *board, int move);
 void UndoMove(Board *board, int move);
 int* GetMoves(const Board *board);
+int isWin(const Board *board);
 
 #endif //TIC_TAC_TOE_BOARD_H
