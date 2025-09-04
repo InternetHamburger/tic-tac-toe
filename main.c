@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include "src/board.h"
-#include "src/search.h"
+#include "src/ugi.h"
 
 int main(void) {
     Board board = {
-        .squares = {0, 0, 0, 0, 0, 0, 0, 0, 0},
+        .x_bitboard = 0b0,
+        .o_bitboard = 0b0,
         .num_moves = 9,
         .x_to_move = 1
     };
 
-    printf("%d\n", negamax(&board));
+
+    Match(&board);
+    int a;
+    scanf("%d", &a);
     return 0;
 }

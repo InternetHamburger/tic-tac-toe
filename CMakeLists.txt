@@ -3,8 +3,12 @@ project(tic_tac_toe C)
 
 set(CMAKE_C_STANDARD 23)
 
+set(CMAKE_CXX_FLAGS -Wall)
+
 add_executable(tic_tac_toe main.c
         src/board.h
         src/board.c
         src/search.h
-        src/search.c)
+        src/search.c
+        src/ugi.h
+        src/ugi.c)
